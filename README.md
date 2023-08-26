@@ -1,5 +1,7 @@
 # Wee Three
 
+![wee-three](https://github.com/aatoaa/wee-three/assets/130067118/b9ea4452-a173-4cde-b75a-a0a5aa8b0adb)
+
 Wee Three is a gallery app where you can browse 3D objects with different environmental setups.
 
 ### Installing
