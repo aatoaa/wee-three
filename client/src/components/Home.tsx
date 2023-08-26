@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
 import { Canvas } from '@react-three/fiber';
 import { Html, useGLTF, OrbitControls } from '@react-three/drei';
-import DefaultScene from './utils/DefaultScene';
+import { Vector3 } from 'three';
+import ReflectiveScene from './utils/ReflectiveScene';
 
-function Home() {
+function Home () {
   const { scene } = useGLTF('./default_torus-transformed.glb');
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   const model = scene.children[0].geometry;
+  const HomeGroundPos = new Vector3(0, -0.605, 0);
 
   return (
     <div className="portal-container">
@@ -26,8 +28,17 @@ function Home() {
                   <meshStandardMaterial color={'rgb(30, 220, 30))'} />
                 </mesh>
                 <fog attach="fog" args={['#212123', 3, 40]} />
-                <DefaultScene />
-                <HtmlContent />
+                <ReflectiveScene groundPos={HomeGroundPos} />
+                <Html className="html-three" center>
+                  <div className="home">
+                    <section>
+                      <h1>wee three</h1>
+                      <div className="models">
+                        <p>click to enter</p>
+                      </div>
+                    </section>
+                  </div>
+                </Html>
                 <OrbitControls autoRotate />
               </>
             )}
@@ -35,21 +46,6 @@ function Home() {
         </div>
       </Link>
     </div>
-  );
-}
-
-function HtmlContent() {
-  return (
-    <Html className="html-three" center>
-      <div className="home">
-        <section>
-          <h1>wee three</h1>
-          <div className="models">
-            <p>click to enter</p>
-          </div>
-        </section>
-      </div>
-    </Html>
   );
 }
 
