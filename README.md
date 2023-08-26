@@ -14,7 +14,9 @@ run `npm i`
 
 Have a MongoDB running locally and set the URL in `server/.env` file DB_URL constant. The example is provided in the `.env.example` file.
 
-To populate example data to the DB you can run `node seeder/seedObjects.js` in the `server` folder.
+`npm run setup` => Runs the seeder using `nodemon`, adding the default objects to the database. Seeder can also be run manually with node from the `server/seeder` folder.
+
+`npm run start` => Runs the backend server 
 
 ### Starting
 
