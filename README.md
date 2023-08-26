@@ -1,6 +1,6 @@
 # Wee Three
 
-WeeThree is a gallery app where you can browse 3D objects with different environmental setups.
+Wee Three is a gallery app where you can browse 3D objects with different environmental setups.
 
 ### Installing
 
