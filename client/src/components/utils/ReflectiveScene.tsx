@@ -7,7 +7,7 @@ import { IDefaultScene } from './WeeTypes';
 // Default position setting the distance to the ground plane
 const defaultGroundPos = new Vector3(0, -1.7, 0);
 
-function ReflectiveScene({ groundPos = defaultGroundPos }: IDefaultScene) {
+function ReflectiveScene ({ groundPos = defaultGroundPos }: IDefaultScene) {
 
   /**
    * Render component
@@ -17,6 +17,7 @@ function ReflectiveScene({ groundPos = defaultGroundPos }: IDefaultScene) {
     <>
       <BasicLights />
       <Environment preset="city" />
+      <color attach="background" args={['#151515']} />
       <group position={groundPos}>
         <ReflectiveGround />
       </group>
