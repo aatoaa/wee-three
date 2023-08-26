@@ -20,5 +20,7 @@ In the `client` folder `npm run dev`
 
 In the `server` folder `nodemon`
 
+### Tech Stack
 
+React, TypeScript, Vite, React Three Fiber, Node, Express, MongoDB, Mongoose
 
