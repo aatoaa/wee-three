@@ -26,5 +26,8 @@ In the `server` folder `nodemon`
 
 ### Tech Stack
 
-React, TypeScript, Vite, React Three Fiber, Three.js, Node, Express, MongoDB, Mongoose
+- [React](https://github.com/facebook/react) - [TypeScript](https://github.com/microsoft/TypeScript) - [Vite](https://github.com/vitejs/vite)
+- [React Three Fiber](https://github.com/pmndrs/react-three-fiber) - [Three.js](https://github.com/mrdoob/three.js)
+- [Node](https://github.com/nodejs/node) - [Express](https://github.com/expressjs/express)
+- [MongoDB](https://github.com/mongodb/mongo) - [Mongoose](https://github.com/Automattic/mongoose)
 
