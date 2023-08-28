@@ -31,3 +31,6 @@ In the `server` folder `nodemon`
 - [Node](https://github.com/nodejs/node) - [Express](https://github.com/expressjs/express)
 - [MongoDB](https://github.com/mongodb/mongo) - [Mongoose](https://github.com/Automattic/mongoose)
 
+### Author
+
+- Arto Lahtinen - [GitHub](https://github.com/aatoaa) - [LinkedIn](https://www.linkedin.com/in/arto-l/)
